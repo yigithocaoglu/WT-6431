@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WT-6431</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1> <i class="fa-solid fa-user fa-2x"></i> Kullanıcı Bilgileri</h1>
+      <form
+        target="_blank"
+        action="https://formsubmit.co/yigit_hocaoglu@email.com"
+        method="POST"
+      >
+        <div>
+          <div>
+            <label for="first_name"><i class="fa-solid fa-circle-user"></i> İsminiz</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              minlength="2"
+              maxlength="16"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="last_name"><i class="fa-regular fa-circle-user"></i> Soyadınız</label>
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              minlength="2"
+              maxlength="16"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="email"><i class="fa-solid fa-envelope"></i> E-mail adresiniz</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <br />
+          <div>
+            <label for="age"><i class="fa-solid fa-address-card"></i> Yaşınız</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              min="15"
+              max="70"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="message"><i class="fa-solid fa-comments"></i></i> Mesajınız</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              cols="30"
+              required
+            ></textarea>
+          </div>
+          <br />
+          <div>
+            <label for="website_rating"><i class="fa-solid fa-heart"></i> Sitemizi beğendiniz mi?</label>
+            <br />
+            <input
+              type="range"
+              name="website_rating"
+              id="website_rating"
+              min="0"
+              max="10"
+              step="0.5"
+              value="5"
+            />
+          </div>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-lg btn-dark btn-block">
+          Bilgileri Gönder
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
